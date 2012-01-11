@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 
 
-public class Aufgabe7 {
+public class Aufgabe8 {
 
 	/**
 	 * @param args
