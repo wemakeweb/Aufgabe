@@ -10,7 +10,7 @@ public class Buchungsmap{
 		
 		Buchung buchung = new Buchung(start, end, gastname);		
 		
-		if( this.buchungMšglich(buchung) ){
+		if( this.buchungMï¿½glich(buchung) ){
 			buchung.uid = this.uid++;
 			this.buchungen.add(buchung);		
 			return true;
@@ -19,7 +19,7 @@ public class Buchungsmap{
 		}
 	}
 	
-	private boolean buchungMšglich(Buchung b1){
+	private boolean buchungMï¿½glich(Buchung b1){
 		
 		ListIterator<Buchung> it = this.buchungen.listIterator( this.buchungen.size() );
 		Datum b1Start= b1.start,
@@ -42,9 +42,6 @@ public class Buchungsmap{
 		return true;
 	}
 	
-	public void visualize(){
-		new BuchungsDialog(this);
-	}
 	
 	public ArrayList<Buchung> getBuchungen(){
 		return this.buchungen;
