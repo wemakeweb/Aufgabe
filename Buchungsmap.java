@@ -10,7 +10,7 @@ public class Buchungsmap{
 		
 		Buchung buchung = new Buchung(start, end, gastname);		
 		
-		if( this.buchungM�glich(buchung) ){
+		if( this.buchungMöglich(buchung) ){
 			buchung.uid = this.uid++;
 			this.buchungen.add(buchung);		
 			return true;
@@ -19,7 +19,7 @@ public class Buchungsmap{
 		}
 	}
 	
-	private boolean buchungM�glich(Buchung b1){
+	private boolean buchungMöglich(Buchung b1){
 		
 		ListIterator<Buchung> it = this.buchungen.listIterator( this.buchungen.size() );
 		Datum b1Start= b1.start,
