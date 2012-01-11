@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 
 
-public class Aufgabe7 {
+public class Aufgabe8 {
 
 	/**
 	 * @param args
@@ -11,8 +11,8 @@ public class Aufgabe7 {
 		// Zentrale
 		
 		ArrayList<bookableFacility> facilities = new ArrayList<bookableFacility>(){{
-			add( new Tagungsraum("GrŸne Linden", 90, "1 OG", "Schšner sonniger Raum mit Flipchart und Beamer") );
-			add( new Tagungsraum("Bretagne", 150, "2 OG", "Rundum verglaster Raum mit Tafel ideal fŸr Meetings") );
+			add( new Tagungsraum("Grï¿½ne Linden", 90, "1 OG", "Schï¿½ner sonniger Raum mit Flipchart und Beamer") );
+			add( new Tagungsraum("Bretagne", 150, "2 OG", "Rundum verglaster Raum mit Tafel ideal fï¿½r Meetings") );
 			add( new Ferienwohnung("Haus Schlemmer", 45, 90,  "Am Hausberg 2",3, 3) );
 		}};
 		
