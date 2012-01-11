@@ -1,4 +1,3 @@
-
 public class bookableFacility {
 		protected String name;
 		protected double price;
@@ -60,7 +59,7 @@ public class bookableFacility {
 					Heute.getYear() == BuchungsDatum.getYear() && Heute.getMonth() == BuchungsDatum.getMonth() && Heute.getDay() == BuchungsDatum.getDay()){
 				return 0;
 			} else {
-				if(this.isVerfügbar(BuchungsDatum, tage, name)){
+				if(this.isVerf√ºgbar(BuchungsDatum, tage, name)){
 					return this.calcPrice(tage);
 				} else {
 					return 0;
@@ -79,7 +78,7 @@ public class bookableFacility {
 		}
 		
 		
-		private boolean isVerfügbar(Datum BuchungsDatum, int naechte, String name){	
+		private boolean isVerf√ºgbar(Datum BuchungsDatum, int naechte, String name){	
 			try{
 				return this.bookings.buche(BuchungsDatum, BuchungsDatum.addDays(naechte), name);
 			} catch (Exception e){
